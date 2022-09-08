@@ -83,8 +83,6 @@ body {
   top: 50%;
   transform: rotate(30deg) translateY(-50%);
   height: 200%;
-  -webkit-transform-origin: top;
-  -moz-transform-origin: top;
   transform-origin: top;
 }
 
@@ -97,10 +95,4 @@ body {
 .skewed .top .content {
   transform: skew(30deg);
   margin-left: 1000px;
-}
-
-@media (max-width: 900px) {
-  body {
-    font-size: 75%;
-  }
 }

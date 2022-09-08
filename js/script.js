@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     skewHack = 0,
     delta = 0;
 
-  // If the parent has .skewed class, set the skewHack var.
-  if (parent.className.indexOf("skewed") != -1) {
+  // if the parent has .skewed class, set the skewHack var.
+  if (parent.className.indexOf("skewed" != -1)) {
     skewHack = 1000;
   }
 
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Move the handle.
     handle.style.left = event.clientX + delta + "px";
 
-    // Adjust the top panel width.
+    //Adjust the top panel width.
     topPanel.style.width = event.clientX + skewHack + delta + "px";
   });
 });
